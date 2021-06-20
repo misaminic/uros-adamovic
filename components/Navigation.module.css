@@ -1,0 +1,53 @@
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.nav-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #010203;
+  margin: 40px 0;
+  width: max-content;
+  border-radius: 0.2rem;
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateX(-150%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li i:before {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #010203;
+}
+
+nav ul li i span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #010203;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-right: 30px;
+  transform: translateX(-200%);
+}

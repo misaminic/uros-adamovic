@@ -1,0 +1,281 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #010203;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: transparent;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  cursor: pointer;
+  background-color: #010203;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.nav-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #010203;
+  margin: 40px 0;
+  width: max-content;
+  border-radius: 0.2rem;
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateX(-150%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li i:before {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #010203;
+}
+
+nav ul li i span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #010203;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-right: 30px;
+  transform: translateX(-200%);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+  position: absolute;
+  margin-top: 26rem;
+  margin-right: 40rem;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 3.5rem;
+  letter-spacing: 0.4rem;
+  font-weight: 350;
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.content h5 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  color: rgba(255, 255, 255, 0.88);
+
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.videos-section {
+  position: relative;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.sound-wave-section {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.sound-wave-2 {
+  transform: rotate(180deg);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.about h3,
+.videos-headline {
+  margin: 1rem;
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.6rem;
+}
+
+.videos-headline-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.videos-headline {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.about p,
+.videos-section p {
+  margin: 0;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  text-align: justify;
+  letter-spacing: 0.07rem;
+  line-height: 1.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-top: 10rem;
+    margin-right: 0;
+  }
+
+  .content h3 {
+    font-size: 1.5rem;
+  }
+
+  .content h5 {
+    font-size: 0.8rem;
+  }
+
+  .sound-wave-section {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about h3,
+  .videos-headline {
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+  }
+
+  .about p,
+  .videos-section p {
+    margin: 1.25rem;
+  }
+
+  .videos-section {
+    margin-top: 2rem;
+  }
+
+  .videos-headline {
+    margin: 0;
+  }
+}

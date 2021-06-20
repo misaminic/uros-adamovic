@@ -1,0 +1,83 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 0;
+  background: #fff;
+  height: 100vh;
+}
+
+.contactForm {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  width: 90vw;
+  height: min-content;
+  max-width: 35rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h3 {
+  font-size: 1.5rem;
+}
+
+.formGroup {
+  padding: 1rem 1.5rem;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background-color: #eeecec;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.submitBtn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: 2px solid transparent;
+  background: #030303;
+  color: #fff;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  padding: 2rem 2.5rem;
+}
+
+.footer {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #030303;
+  color: #ccc;
+}
+
+.footer h4 {
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .links a {
+    padding: 1rem 2.5rem;
+  }
+}
