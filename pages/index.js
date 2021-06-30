@@ -95,7 +95,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href="/videos">
-                  <i class="fas fa-play-circle">
+                  <i className="fas fa-play-circle">
                     <span className="nav-font">Videos</span>
                   </i>
                 </Link>
