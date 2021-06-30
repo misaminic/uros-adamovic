@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/Link';
 import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
 import { useState, useCallback, useRef, useEffect } from 'react';
@@ -90,6 +90,13 @@ export default function Home() {
                 <Link href="/about">
                   <i className="fas fa-user-alt">
                     <span className="nav-font">About</span>
+                  </i>
+                </Link>
+              </li>
+              <li>
+                <Link href="/videos">
+                  <i class="fas fa-play-circle">
+                    <span className="nav-font">Videos</span>
                   </i>
                 </Link>
               </li>

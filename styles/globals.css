@@ -102,6 +102,7 @@ nav ul {
 
 .nav-font {
   font-family: 'Roboto', sans-serif;
+  cursor: pointer;
 }
 
 nav ul li {
@@ -195,6 +196,12 @@ nav ul li + li + li {
   text-align: center;
 }
 
+.on-videos-page {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
 .sound-wave-section {
   margin-top: 4rem;
   margin-bottom: 3rem;
@@ -241,6 +248,14 @@ nav ul li + li + li {
   line-height: 1.7rem;
 }
 
+.videos-page {
+  text-align: center;
+}
+
+.single-video {
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .content {
     margin-top: 10rem;
@@ -277,5 +292,9 @@ nav ul li + li + li {
 
   .videos-headline {
     margin: 0;
+  }
+
+  .single-video {
+    width: 95%;
   }
 }

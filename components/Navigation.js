@@ -20,6 +20,13 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
+            <Link href="/videos">
+              <i className="fas fa-envelope">
+                <span className="nav-font">Videos</span>
+              </i>
+            </Link>
+          </li>
+          <li>
             <Link href="/contact">
               <i className="fas fa-envelope">
                 <span className="nav-font">Contact</span>
