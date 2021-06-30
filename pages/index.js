@@ -24,8 +24,6 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
-  //
-
   const menuClickHandler = () => {
     setMenuVisibility(!menuVisibility);
   };
