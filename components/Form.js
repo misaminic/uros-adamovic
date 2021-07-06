@@ -10,7 +10,7 @@ const Form = () => {
       </section>
       <div className={classes.formContainer}>
         <form
-          action="https://formspree.io/f/xgervrnv"
+          action="https://formspree.io/f/xrgrldnr"
           method="POST"
           className={classes.contactForm}
         >
