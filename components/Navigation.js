@@ -5,13 +5,13 @@ const Navigation = () => {
     <>
       <nav>
         <ul>
-          <li>
+          {/* <li>
             <Link href="/">
               <i className="fas fa-home">
                 <span className="nav-font">Home</span>
               </i>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/about">
               <i className="fas fa-user-alt">
