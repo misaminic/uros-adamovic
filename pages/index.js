@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next/lgit sink';
 import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
 import { useState, useCallback, useRef, useEffect } from 'react';
@@ -77,13 +77,13 @@ export default function Home() {
           </div>
           <nav>
             <ul>
-              <li>
+              {/* <li>
                 <Link href="/">
                   <i className="fas fa-home">
                     <span className="nav-font">Home</span>
                   </i>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/about">
                   <i className="fas fa-user-alt">
